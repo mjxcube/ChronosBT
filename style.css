@@ -1,0 +1,54 @@
+body {
+  font-family: "Georgia", serif;
+  background: #fdf6e3;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+header {
+  background: #a1866f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+h1 { margin: 0; font-size: 1.8rem; }
+.tabs { display: flex; justify-content: center; margin-top: 0.5rem; }
+.tab-btn {
+  background: #d9c4a7;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.tab-btn.active { background: #f2e3d0; }
+.tab-content { display: none; padding: 1rem; }
+.tab-content.active { display: block; }
+.timeline { list-style: none; padding: 0; margin: 0; }
+.timeline li { margin: 0.5rem 0; }
+.event {
+  background: #fff8e7;
+  border-left: 5px solid #a1866f;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  position: relative;
+}
+.event .time { font-size: 0.8rem; color: #555; display: block; }
+.event .title { font-weight: bold; font-size: 1rem; }
+.event a { margin-left: 0.5rem; font-size: 0.85rem; text-decoration: underline; color: #3a5f0b; }
+.sub-event { display: none; list-style: disc; padding-left: 2rem; margin-top: 0.5rem; }
+button.toggle {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
+}
+.notfound {
+  text-align: center;
+  margin-top: 10%;
+}
+.notfound h1 { font-size: 6rem; color: #a1866f; }
+.notfound p { font-size: 1.2rem; }
+.notfound a { text-decoration: none; color: #3a5f0b; font-weight: bold; }
